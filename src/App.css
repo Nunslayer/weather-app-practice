@@ -1,0 +1,229 @@
+body{
+  background-image: url(./assets/images/weather-background.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+.App {
+  position: relative;
+}
+.container-form{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 30%;
+  max-width: 400px;
+  min-width: 250px;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+  top: 15px;
+  left: 35%;
+}
+.container-form>ul{
+  padding: 0 0.5rem;
+}
+.container-form>ul>li{
+  list-style: none;
+  font-weight: lighter;
+
+}
+.container-input-autocomplete{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.input-autocomplete{
+  width: 95%;
+  color: #000000;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.container-input-autocomplete>span{
+  text-align: center;
+  color: #000000;
+  border: #000000 1px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-weather{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  
+}
+
+.container-tittles{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+.container-tittles > *{
+  padding: 0;
+  margin: 0;
+}
+.subcontainer{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  width: min-content;
+  min-width: 200px;
+  padding: 0;
+  margin: 0;
+  background: rgba(0,0,0,0.5);
+  border-radius: 0.5em;
+  bottom: 10%;
+  right: 5%;
+}
+.subcontainer > *{
+  padding: 0;
+  margin: 0;
+}
+.weather-tittle{
+  font-size: 40px;
+  font-weight: lighter;
+  text-shadow: 2px 2px 4px #000000
+}
+.weather-tittle>span{
+  color: red;
+}
+.weather-subtittle{
+  font-size: 16px;
+  font-weight: lighter;
+  vertical-align: top;
+  line-height: 0;
+  text-shadow: 2px 2px 4px #000000
+}
+.main-data-weather{
+  display: inline-block;
+  margin: 0;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1;
+  
+}
+.main-data-weather > span{
+  font-size: 35px;
+  vertical-align: top;
+  line-height: 2;
+}
+.min-max-weather{
+  font-size: 16px;
+  font-weight: lighter;
+  vertical-align: top;
+  line-height: 0.5;
+}
+
+.icon-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.icon-container>img{
+  width: 100px;
+  height: 100px;
+}
+.icon-container>span{
+  font-size: 18px;
+  font-weight: lighter;
+  vertical-align: top;
+  line-height: 0;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.place-image{
+  width: 100%;
+  height: 100%;
+}
+/*estilos y animacion para el boton de cambio*/
+.btn-cf{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 4.5%;
+  right: 11%;
+  height: 20px;
+  width: 40px;
+  border-radius: 7px;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  padding: auto 0;
+}
+.btn-cf.onF{
+  justify-content: flex-end;
+}
+.circle-option{
+  width: 15px;
+  height: 15px;
+  background-color: #c51616;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 2px 2px black;
+}
+.circle-option.onF{
+  background-color: #238b3d;
+  box-shadow: 2px 2px black;
+}
+.container-card-forecast{
+  display: flex;
+  flex-direction: row;
+  padding: 15px auto;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.card-forecast{
+  border-radius: 0.5em;
+  background: rgba(0,0,0,0.5);
+  padding: .5em;
+  text-align: center;
+}
+.forecast-subtittle{
+  font-size: 12px;
+  font-weight: lighter;
+  vertical-align: top;
+  line-height: 0.5;
+}
+.card-forecast > *{
+  padding: 0;
+  margin: 0;
+  min-width: 12vw;
+}
+.container-icon-forecast{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0
+}
+.container-icon-forecast>p{
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+  vertical-align: top;
+  line-height: 0; 
+  font-size: 14px;
+  font-weight: lighter;
+}
+.data-container-forecast>*{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.main-data-forecast{
+  font-size: 22px;
+  font-weight: bold;
+}
+.min-max-forecast{
+  font-size: 12px;
+  font-weight: lighter;
+}
